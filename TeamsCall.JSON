@@ -1,0 +1,42 @@
+{  
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/column-formatting.schema.json",  
+    "elmType": "div",  
+    "children": [  
+        {  
+            "elmType": "a",  
+            "style": {  
+                "padding-right": "8px"  
+            },  
+            "txtContent": "Chat in Teams",  
+        "attributes": {  
+        "target": "_blank",  
+        "href": {  
+                    "operator": "+",  
+                    "operands": [  
+                        "https://teams.microsoft.com/l/call/0/0?users=",  
+                        "@currentField",  
+                        "&message=Please order more widgets "
+                    ]  
+                }  
+                  
+            }  
+        },  
+        {  
+            "elmType": "a",  
+            "attributes": {  
+        "target":"_blank",  
+                "iconName": "TeamsLogo",  
+                "class": "sp-field-quickActions",  
+        "href": {  
+                    "operator": "+",  
+                    "operands": [  
+                        "https://teams.microsoft.com/l/call/0/0?users=",  
+                        "@currentField",  
+                        "&message=Please order more widgets"
+                    ]  
+                }  
+                  
+            }  
+        }  
+    ]  
+}  

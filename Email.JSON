@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/column-formatting.schema.json",
+  "elmType": "div",
+  "children": [
+    {
+      "elmType": "a",
+      "style": {
+        "padding-right": "8px"
+      },
+      "txtContent": "Email",
+      "attributes": {
+        "target": "_blank",
+        "href": {
+          "operator": "+",
+          "operands": [
+            "mailto:",
+            "[$Title]",
+            "?subject=Wonder women here&body=Hey ",
+            "[$Title]",
+            "\nJust checking, if you have saved the world?.\r\n---\r\n",
+            "\r\nClick this link for more info. http://contoso.sharepoint.com/sites/ConferencePrep/Tasks/Prep/DispForm.aspx?ID=",
+            "[$ID]"
+          ]
+        }
+      }
+    },
+    {
+      "elmType": "a",
+      "attributes": {
+        "target": "_blank",
+        "iconName": "Mail",
+        "class": "sp-field-quickActions",
+        "href": {
+          "operator": "+",
+          "operands": [
+            "mailto:",
+            "[$Title]",
+            "?subject=Wonder women here&body=Hey ",
+            "[$Title]",
+            "\nJust checking, if you have saved the world?\r\n---\r\n",
+            "\r\nClick this link for more info. http://contoso.sharepoint.com/sites/ConferencePrep/Tasks/Prep/DispForm.aspx?ID=",
+            "[$ID]"
+          ]
+        }
+      }
+    }
+  ]
+}

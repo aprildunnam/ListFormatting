@@ -7,15 +7,14 @@
             "style": {  
                 "padding-right": "8px"  
             },  
-            "txtContent": "Chat in Teams",  
+            "txtContent": "Call in Teams",  
         "attributes": {  
         "target": "_blank",  
         "href": {  
                     "operator": "+",  
                     "operands": [  
                         "https://teams.microsoft.com/l/call/0/0?users=",  
-                        "@currentField",  
-                        "&message=Please order more widgets "
+                        "@currentField"
                     ]  
                 }  
                   
@@ -31,8 +30,7 @@
                     "operator": "+",  
                     "operands": [  
                         "https://teams.microsoft.com/l/call/0/0?users=",  
-                        "@currentField",  
-                        "&message=Please order more widgets"
+                        "@currentField"
                     ]  
                 }  
                   

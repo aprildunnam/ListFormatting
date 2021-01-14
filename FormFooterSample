@@ -1,0 +1,40 @@
+{
+    "debugMode": true,
+    "elmType": "div",
+    "style": {
+        "width": "100%",
+        "text-align": "left",
+        "overflow": "hidden",
+        "border-top-width": "1px"
+    },
+    "children": [
+        {
+            "elmType": "div",
+            "attributes": {
+                "class": "ms-borderColor-neutralTertiary"
+            },
+            "style": {
+                "width": "100%",
+                "padding-top": "10px",
+                "height": "24px",
+                "border-top-width": "1px",
+                "border-bottom-width": "0px",
+                "border-left-width": "0px",
+                "border-right-width": "0px",
+                "border-style": "solid",
+                "margin-top": "16px"
+            },
+            "children": [
+                {
+                    "elmType": "a",
+                    "txtContent": "Need Help? Contact the help desk",
+                    "attributes": {
+                        "target": "_blank",
+                        "href": "https://teams.microsoft.com/l/call/0/0?users=insertEmailHere",
+                        "class": "ms-fontColor-themePrimary ms-borderColor-themePrimary ms-fontWeight-regular ms-fontSize-m ms-fontColor-neutralSecondary–hover ms-bgColor-themeLight–hover"
+                    }
+                }
+            ]
+        }
+    ]
+}

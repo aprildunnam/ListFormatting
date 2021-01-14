@@ -1,0 +1,70 @@
+{
+    "debugmode": "true",
+    "elmType": "div",
+    "attributes": {
+        "class": "ms-borderColor-neutralTertiary"
+    },
+    "style": {
+        "width": "99%",
+        "border-top-width": "0px",
+        "border-bottom-width": "1px",
+        "border-left-width": "0px",
+        "border-right-width": "0px",
+        "border-style": "solid",
+        "margin-bottom": "16px"
+    },
+    "children": [
+        {
+            "elmType": "div",
+            "style": {
+                "display": "flex",
+                "box-sizing": "border-box",
+                "align-items": "center"
+            },
+            "children": [
+                {
+                    "elmType": "div",
+                    "attributes": {
+                        "iconName": "WebAppBuilderFragment",
+                        "class": "ms-fontSize-42 ms-fontWeight-regular  ms-fontColor-themePrimary",
+                        "title": "Your icon"
+                    },
+                    "style": {
+                        "flex": "none",
+                        "padding": "0px",
+                        "padding-left": "0px",
+                        "height": "36px"
+                    }
+                }
+            ]
+        },
+        {
+            "elmType": "div",
+            "attributes": {
+                "class": "ms-fontColor-neutralSecondary ms-fontWeight-bold ms-fontSize-24"
+            },
+            "style": {
+                "box-sizing": "border-box",
+                "width": "100%",
+                "text-align": "left",
+                "padding": "21px 12px",
+                "overflow": "hidden"
+            },
+            "children": [
+                {
+                    "elmType": "div",
+                    "txtContent": {
+                        "operator": "+",
+                        "operands": [
+                            "Status:  ",
+                            "[$Status]"
+                        ]
+                    },
+                    "style": {
+                        "height": "24px"
+                    }
+                }
+            ]
+        }
+    ]
+}

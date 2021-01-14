@@ -1,0 +1,30 @@
+{
+    "sections": [
+        {
+            "displayname": "",
+            "fields": [
+                "Status"
+            ]
+        },
+        {
+            "displayname": "Asset Details",
+            "fields": [
+                "Device Photo",
+                "Title",
+                "Asset tag",
+                "Asset type",
+                "Manufacturer",
+                "Model",
+                "Serial number",
+                "Color",
+                "Condition notes"
+            ]
+        },
+        {
+            "displayname": "Purchase and Check Out History",
+            "fields": [
+                "Purchase Date"
+            ]
+        }
+    ]
+}

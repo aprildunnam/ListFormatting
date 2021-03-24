@@ -1,0 +1,123 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/row-formatting.schema.json",
+    "groupProps": {
+        "hideFooter":false,
+      "headerFormatter": {
+        "elmType": "div",
+        "style": {
+          "flex-wrap": "wrap",
+          "display": "flex",
+          "box-sizing": "border-box",
+          "padding": "4px 8px 5px 8px",
+          "border-radius": "6px",
+          "align-items": "center",
+          "white-space": "nowrap",
+          "overflow": "hidden",
+          "margin": "1px 4px 4px 1px"
+        },
+        "attributes": {
+          "class": "=if(@group.fieldData == 'Accessory', 'sp-css-backgroundColor-blueBackground37',if(@group.fieldData == 'Laptop', 'sp-css-backgroundColor-successBackground50',if(@group.fieldData == 'Printer', 'sp-css-backgroundColor-warningBackground50',if(@group.fieldData == 'Smartphone', 'sp-css-backgroundColor-blockingBackground50','sp-field-borderAllRegular sp-field-borderAllSolid sp-css-borderColor-neutralSecondary'))))"
+        },
+        "children": [
+          {
+            "elmType": "span",
+            "attributes": {
+              "iconName": "=if(@group.fieldData == 'Accessory', 'CoffeeScript',if(@group.fieldData == 'Laptop', 'LaptopSelected',if(@group.fieldData == 'Printer', 'PrintfaxPrinterFile',if(@group.fieldData == 'Smartphone', 'CellPhone',''))))"
+            },
+            "style": {
+              "max-width": "24px",
+              "max-height": "24px",
+              "margin-top": "2px",
+              "border-radius": "2px"
+            }
+          },
+          {
+            "elmType": "div",
+            "children": [
+              {
+                "elmType": "div",
+                "style": {
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "justify-content": "center"
+                },
+                "children": [
+                  {
+                    "elmType": "div",
+                    "txtContent": "=  @group.count",
+                    "style": {
+                      "padding": "5px 5px 5px 5px",
+                      "font-weight": "500"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "children": [
+              {
+                "elmType": "div",
+                "style": {
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "justify-content": "center"
+                },
+                "children": [
+                  {
+                    "elmType": "div",
+                    "txtContent": "=  @group.fieldData.displayValue +'(s)  ' ",
+                    "style": {
+                      "padding": " ",
+                      "font-weight": "500"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "footerFormatter": {
+        "elmType": "div",
+        "attributes": {
+          "class": "ms-fontColor-themePrimary"
+        },
+        "customCardProps": {
+          "formatter": {
+            "elmType": "div",
+            "children": [
+              {
+                "elmType": "div",
+                "style": {
+                  "display": "flex"
+                },
+                "txtContent": "=@columnAggregate.type + ' of ' + @columnAggregate.columnDisplayName + ' is ' + @columnAggregate.value"
+              }
+            ],
+            "style": {
+              "height": "10px",
+              "width": "auto",
+              "cursor": "pointer",
+              "font-size": "14px",
+              "padding": "14px"
+            }
+          },
+          "openOnEvent": "hover",
+          "directionalHint": "bottomCenter",
+          "isBeakVisible": true,
+          "beakStyle": {
+            "backgroundColor": "white"
+          }
+        },
+        "txtContent": "View details",
+        "style": {
+          "text-decoration": "none",
+          "cursor": "pointer",
+          "font-size": "16px",
+          "margin-top": "10px"
+        }
+      }
+  }
